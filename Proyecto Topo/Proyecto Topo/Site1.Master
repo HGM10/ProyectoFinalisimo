@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Proyecto_Topo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link href="Diseno/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Diseno/css/estilos.css" rel="stylesheet" />
+    <link href="Diseno/css/fontawesome.css" rel="stylesheet" />
+    <link href="Diseno/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="Diseno/fontawesome/css/all.css" rel="stylesheet" />
+    <script src="Diseno/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Permanent+Marker&display=swap" rel="stylesheet">
+
+
+    <link href="../imagenes/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <title>Reyno Fungi</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="container-fluid">
+            <header class="header">
+
+                 <div class="row fondo-header">
+
+                     <div class="col-2 logo">
+                        
+                     
+                     </div>
+                    <!-- en esta columna va el nombre de la pagina -->
+
+                    <div class="col-8 nombre_pagina">
+                        <p class="fuente">Reyno Fungi Nicaragua</p>
+                    </div>
+
+                    <!-- en esta columna van las redes sociales -->
+
+                    <div class="col-2 fondo-iconos">
+                        <a href="https://www.facebook.com/reinnofungi/"><i class="fab fa-facebook-square redes"></i></a>
+                        <a href="#"> <i class="fab fa-instagram redes"></i></a>
+                        <a href="#"> <i class="fab fa-twitter-square redes"></i></a>
+                    </div>
+                </div>
+
+                <%--este contenedor es para el menu de navegacion--%>
+
+                <div class="row">
+                    <nav class="col-12 navbar nav_header">
+                        <a href="Default.aspx" class="anclas">  <i class="fas fa-home nave"></i> Inicio </a>
+                        <a href="Buscar.aspx" class="anclas"><i class="fas fa-search nave"></i> Buscar</a>
+                        <a href="Tendencias.aspx" class ="anclas"> <i class="fab fa-free-code-camp nave"></i> Tendencias </a>
+                        <a href="#" class ="anclas"> <i class="far fa-flag nave"></i> Guias </a>
+                        <a href="#" class ="anclas"> <i class="far fa-folder nave"></i> Agregar </a>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                      
+            </asp:ContentPlaceHolder>
+
+         <div class="row">
+                <div class="col-12">
+                    <footer class="footer">
+                        <div class="row">
+                            <div class="col-2">
+                               Heyner Hernandez <br>
+                               Santiago Mendoza <br>
+                               Kevin Centeno <br>
+                            </div>
+                            <div class="col-8">
+                                Todos los derechos Reservados
+                            </div>
+                            <div class="col-2">
+                                Version 1.1
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+             </div>
+    </form>
+</body>
+</html>

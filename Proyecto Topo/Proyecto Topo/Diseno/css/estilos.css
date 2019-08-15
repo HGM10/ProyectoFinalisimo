@@ -1,0 +1,231 @@
+    .header{
+        /* margin:0px 10px 0px 10px; */
+    }
+        .fondo-header{
+          
+            padding: 10px;
+            margin 15px;
+            background-image: url(../imagenes/fondo.png);
+            background-position: center;
+            background-attachment: center;
+            background-size: cover;
+            justify-content: center;
+        }
+                .logo{
+                    background-image: url(../imagenes/favicon.ico);
+                    background-position: center;
+                    background-attachment: cover;
+                    background-size: cover;
+                    padding: 50px;
+                    /*image-resolution: 20px 10px;*/
+                }
+                .nombre_pagina{
+                    text-align:start;
+                }
+
+                .redes {
+                    color: white;
+                    font-size: 40px;
+                    letter-spacing: 20px;
+                    /*justify-content: center;*/
+                }
+                .nav_header {
+                    padding: 5px;
+                    background-color: #042f4b;
+                    text-align: center;
+                }
+                .navbar{
+                    justify-content:center;
+                    padding: 5px;
+                }
+                    .nave{
+                        color: white;
+                        font-size: 30px;
+                        letter-spacing: 8px;
+                    }
+                        .anclas{
+                            padding: 20px;
+                            color: white;
+                        }
+                                a:hover {
+                                    text-decoration: none;
+                                }
+.diseno{
+    padding: 20px;
+    margin: 80px 0px 80px 0px;
+}
+
+
+       .form-group{
+           align-self:center;
+       }
+
+      .btn{
+          font-size: 15px;
+      }
+
+
+            p{
+                color: white;
+                font-size: 25px;
+                text-align: center;
+            }
+                .btn{
+                    color: white;
+                    font-size: 30px;
+                }
+.fuente {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #ecfcff;
+    text-shadow: 5px 2px black;
+}
+                .fondo-iconos{
+                    color: white;
+                    text-align: center;
+                    /*justify-content: center;*/
+                }
+                
+            
+                    i:hover{
+                        color: cyan;
+                    }
+               
+                .aparezca{
+                    display: none;
+                }
+                hr{
+                    color: white;
+                }
+
+.cuerpo {
+    background: linear-gradient(red);
+    /*background-image: url(../imagenes/hongos.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: center;*/
+    background-color: #042f4b;
+    margin: auto;
+}
+        .aside1{
+            background-image:url(../imagenes/hongos.jpg);
+            background-attachment: cover;
+            background-position: center;
+            background-size: cover;
+            width: auto;
+            height: auto;
+            margin: auto;
+              }
+                .aside-dentro{
+                    padding: 30px;
+                    margin-left:-14px;
+                    /* background-color: #092a2e; */
+
+                }
+                hr{
+                    color: white;
+                }
+
+
+        .aside2{
+            margin: auto;
+            padding: 8px;
+            /* background-image: url(../imagenes/slider-2.jpg); */
+            background-position: center;
+            background-size: cover;
+            background-attachment: cover;
+        }
+                h4{
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: rgb(255, 255, 255);
+                }
+
+                .list-group-item{
+                    text-align: initial;
+                    background: none;
+                    font-size: 13px;
+                    font-weight: 100;
+                }
+                .listas{
+                    color: #ffffff;
+                }
+
+
+
+        .section1{
+          /* align-items: center;
+          align-content: center;
+          justify-content: center;
+          justify-items: center; */
+          margin: auto;
+          padding: 50px;
+        }
+                .article{
+                    /* background-color: black; */
+                    /* height: 250px; */
+                    
+
+                }
+.carouselExampleControls{
+    align-self: center;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+}
+
+                        #carouselExampleControls{
+                            width: 500px;
+                            height: 400px;
+                        }
+                        .ancho{
+                            /* padding: 100px; */
+                           
+                            width: 500px;
+                            height: 400px;
+                        }
+                    h5{
+                        text-shadow: 2px 5px black;
+                        font-size: 50px;
+                    }
+
+        .section2{
+            padding: 50px;
+            margin: auto;
+            margin-top: 40px;
+            background-color:#2d132c ;
+            text-align: center;
+            color: aliceblue;
+
+        }
+            .titulo-fungi{
+                text-shadow: 2px 5px #000;
+            }
+                .definicion{
+                    font-size: 15px;
+                    color: aliceblue;
+                    font-family: cursive;
+                }
+
+        .section3{
+            padding: 50px;
+            margin: auto;
+            margin-top: 10px;
+            background-color: #801336;
+            text-align: center;
+            color: aliceblue;
+            margin-bottom: 25px;
+        }
+
+
+        .footer{
+            margin: auto;
+            background-color: black;
+            padding: 25px 50px 25px 50px;
+            color: rgb(119, 114, 114);
+            text-align: center;
+        }
