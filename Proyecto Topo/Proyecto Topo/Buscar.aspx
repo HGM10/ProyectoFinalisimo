@@ -6,7 +6,7 @@
     <div class="container-fluid diseno">
 
         <div class="row">
-            <div class="col-3"><h1>Ingresar Hongos</h1></div>
+            <div class="col-3"><h1>Escriba el tipo de Hongo que necesita:</h1></div>
             <div class="col-6">
             <div class="form-group">
                 <label for="busqueda"></label>
