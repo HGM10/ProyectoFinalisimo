@@ -21,15 +21,13 @@
                 <asp:Button ID="Button1" runat="server" Text="Buscar" type="button" CssClass="btn btn-primary btn-block" Style=" font-size: 15px;" OnClick="Button1_Click"></asp:Button>
             </div>
             <div class="col-5"></div>
-       <%-- <div class="row">
-        <asp:GridView CssClass="table table-dark" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id_clasificacion" DataSourceID="SqlDataSource1">
-            <Columns>
-                <asp:BoundField DataField="id_clasificacion" HeaderText="id_clasificacion" ReadOnly="True" SortExpression="id_clasificacion" />
-                <asp:BoundField DataField="tipo_clasificacion" HeaderText="tipo_clasificacion" SortExpression="tipo_clasificacion" />
-            </Columns>
-            </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reyno_fungiConnectionString %>" SelectCommand="SELECT * FROM [clasificacion]"></asp:SqlDataSource>
-        </div>--%>
+        <div class="row">
+            <div class="col-12">
+                <asp:GridView ID="GridView1" CssClass="table table-dark" runat="server">
+                </asp:GridView>
+               
+            </div>
+        </div>
 
         </div>
     </div>
