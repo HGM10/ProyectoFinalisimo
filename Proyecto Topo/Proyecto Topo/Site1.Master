@@ -55,8 +55,8 @@
                         <a href="Default.aspx" class="anclas">  <i class="fas fa-home nave"></i> Inicio </a>
                         <a href="Buscar.aspx" class="anclas"><i class="fas fa-search nave"></i> Buscar</a>
                         <a href="Tendencias.aspx" class ="anclas"> <i class="fab fa-free-code-camp nave"></i> Tendencias </a>
-                        <a href="#" class ="anclas"> <i class="far fa-flag nave"></i> Guias </a>
-                        <a href="#" class ="anclas"> <i class="far fa-folder nave"></i> Agregar </a>
+                        <a href="guia.aspx" class ="anclas"> <i class="far fa-flag nave"></i> Guias </a>
+                        <a href="Agregar.aspx" class ="anclas"> <i class="far fa-folder nave"></i> Agregar </a>
                     </nav>
                 </div>
             </header>
