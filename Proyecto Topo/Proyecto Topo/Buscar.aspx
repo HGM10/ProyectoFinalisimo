@@ -6,7 +6,7 @@
     <div class="container-fluid diseno">
 
         <div class="row">
-            <div class="col-3"><h1>Escriba el tipo de Hongo que necesita:</h1></div>
+            <div class="col-3"></div>
             <div class="col-6">
             <div class="form-group">
                 <label for="busqueda"></label>
@@ -17,19 +17,22 @@
         </div>
         <div class="row">
             <div class="col-5"></div>
+
             <div class="col-2"> 
                 <asp:Button ID="Button1" runat="server" Text="Buscar" type="button" CssClass="btn btn-primary btn-block" Style=" font-size: 15px;" OnClick="Button1_Click"></asp:Button>
             </div>
             <div class="col-5"></div>
+        </div>
         <div class="row">
             <div class="col-12">
-                <asp:GridView ID="GridView1" CssClass="table table-dark" runat="server">
+                <asp:GridView ID="GridView1" CssClass="table table-dark" style="margin-top:20px;" runat="server">
                 </asp:GridView>
                
             </div>
         </div>
 
-        </div>
+        
+      
     </div>
 
 </asp:Content>

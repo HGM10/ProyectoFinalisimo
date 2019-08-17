@@ -11,7 +11,7 @@ namespace Proyecto_Topo
 {
     public partial class Buscar : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection("Data Source=.; Initial Catalog= reyno_fungi; Integrated Security= true");
+       
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,16 +20,18 @@ namespace Proyecto_Topo
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("select nombre, forma, color, tipo_clasificacion from Hongo inner join clasificacion on fk_clasificacion=id_clasificacion where nombre= @nombre ", con);
-            cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = TextBox1.Text;
+            SqlConnection con = new SqlConnection("Data Source=.; Initial Catalog= reyno_fungi; Integrated Security= true");
 
             try
             {
+               SqlCommand cmd = new SqlCommand("select nombre as Nombre, forma as Forma, color as Color, tipo_clasificacion as Clasificacion from Hongo inner join clasificacion on fk_clasificacion=id_clasificacion where nombre= @nombre ", con);
+               cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = TextBox1.Text;
                 con.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                
-
-                GridView1.Visible = true;
+                SqlDataAdapter dr = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                dr.Fill(ds);
+                GridView1.DataSource = ds.Tables[0];
+                GridView1.DataBind();
 
                 con.Close();
             }

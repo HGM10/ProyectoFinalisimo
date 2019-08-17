@@ -70,6 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Agregar.aspx" />
     <Content Include="Buscar.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Diseno\css\bootstrap-grid.css" />
@@ -1671,6 +1672,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agregar.aspx.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agregar.aspx.designer.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Buscar.aspx.cs">
       <DependentUpon>Buscar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1701,6 +1709,7 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="SqlDataSource1.cs" />
     <Compile Include="Tendencias.aspx.cs">
       <DependentUpon>Tendencias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
