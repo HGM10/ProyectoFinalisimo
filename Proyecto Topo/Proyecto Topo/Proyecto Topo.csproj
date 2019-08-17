@@ -1657,6 +1657,7 @@
     <Content Include="Diseno\imagenes\favicon.png" />
     <Content Include="Diseno\imagenes\fondo.jpg" />
     <Content Include="Diseno\imagenes\fondo.png" />
+    <Content Include="Diseno\imagenes\fondo_header.png" />
     <Content Include="Diseno\imagenes\hongos-655x368.jpg" />
     <Content Include="Diseno\imagenes\hongos.jpg" />
     <Content Include="Diseno\imagenes\slide-3.jpg" />
