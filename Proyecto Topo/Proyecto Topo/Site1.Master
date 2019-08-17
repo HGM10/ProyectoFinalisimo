@@ -51,7 +51,7 @@
                 <%--este contenedor es para el menu de navegacion--%>
 
                 <div class="row">
-                    <nav class="col-12 navbar nav_header">
+                    <nav class="col-12 nav_header">
                         <a href="Default.aspx" class="anclas">  <i class="fas fa-home nave"></i> Inicio </a>
                         <a href="Buscar.aspx" class="anclas"><i class="fas fa-search nave"></i> Buscar</a>
                         <a href="Tendencias.aspx" class ="anclas"> <i class="fab fa-free-code-camp nave"></i> Tendencias </a>
