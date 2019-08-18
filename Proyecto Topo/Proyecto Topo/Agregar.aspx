@@ -51,6 +51,8 @@
                 <asp:Label ID="Label4" runat="server" Text="ID de Clasificacion"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="TextBox4" CssClass="form-control" type="text"  runat="server"></asp:TextBox>
+                    <br />
+                    <asp:TextBox ID="TextBox5" runat="server" AutoPostBack="True" OnTextChanged="TextBox5_TextChanged"></asp:TextBox>
                 </div>
             </div>
         </div>
@@ -62,10 +64,10 @@
                 <asp:Button ID="Button1" CssClass="btn btn-dark" style="font-size:15px; margin:10px 10px 10px 10px; padding: 20px; align-self: center;" runat="server" Text="Insertar" OnClick="Button1_Click" />
             </div>
             <div class="col-4" style="text-align: center;">
-                <asp:Button ID="Button2" CssClass="btn btn-dark" style="font-size:15px; margin:10px 10px 10px 10px; padding: 20px; align-self: center;" runat="server" Text="Modificar" />
+                <asp:Button ID="Button2" CssClass="btn btn-dark" style="font-size:15px; margin:10px 10px 10px 10px; padding: 20px; align-self: center;" runat="server" Text="Modificar" OnClick="Button2_Click" />
             </div>
             <div class="col-4" style="text-align: center;">
-                <asp:Button ID="Button3" CssClass="btn btn-dark" style="font-size:15px; margin:10px 10px 10px 10px; padding: 20px; align-self: center;" runat="server" Text="Eliminar" />
+                <asp:Button ID="Button3" CssClass="btn btn-dark" style="font-size:15px; margin:10px 10px 10px 10px; padding: 20px; align-self: center;" runat="server" Text="Eliminar" OnClick="Button3_Click" />
             </div>
         </div>
     </div>
