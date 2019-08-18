@@ -1652,6 +1652,7 @@
     <Content Include="Diseno\fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="Diseno\fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="Diseno\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Diseno\imagenes\12.png" />
     <Content Include="Diseno\imagenes\favicon.ico" />
     <Content Include="Diseno\imagenes\favicon.ico.ico.ico" />
     <Content Include="Diseno\imagenes\favicon.png" />

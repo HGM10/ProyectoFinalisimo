@@ -1,16 +1,15 @@
     .header{
         /* margin:0px 10px 0px 10px; */
     }
-        .fondo-header{
-          
-            padding: 10px;
-            margin 15px;
-            background-image: url(../imagenes/fondo.png);
-            background-position: center;
-            background-attachment: center;
-            background-size: cover;
-            justify-content: center;
-        }
+.fondo-header {
+    padding: 10px;
+    margin 15px;
+    background-image: url('../imagenes/12.png');
+    background-position: center;
+    background-attachment: center;
+    background-size: cover;
+    justify-content: center;
+}
                 .logo{
                     background-image: url(../imagenes/favicon.ico);
                     background-position: center;
