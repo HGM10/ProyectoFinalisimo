@@ -3,4 +3,72 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="text-align:center;">
+                <h3>Seleccione el indice de la Clasificacion segun al que pertenece su hongo</h3>
+
+                <br />
+                <asp:GridView ID="GridView1" CssClass="table table-dark" style="margin-right: 20px; margin-bottom: 60px;" runat="server" AutoGenerateColumns="False" DataKeyNames="id_clasificacion" DataSourceID="SqlDataSource1">
+                    <Columns >
+                        <asp:BoundField DataField="id_clasificacion" HeaderText="id_clasificacion" ReadOnly="True" SortExpression="id_clasificacion" />
+                        <asp:BoundField DataField="tipo_clasificacion" HeaderText="tipo_clasificacion" SortExpression="tipo_clasificacion" />
+                    </Columns>
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reyno_fungiConnectionString %>" SelectCommand="SELECT * FROM [clasificacion]"></asp:SqlDataSource>
+
+            </div>
+        </div>
+        <div class="form-group" style="margin: 0px 60px 0px 60px;">
+            <%--en esta parte declaro que pertenezcan a una clase formulario--%>
+            <div class="row">
+                <div class="col-6">
+
+                <asp:Label ID="Label1" runat="server" Text="Nombre del Hongo"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox1" CssClass="form-control" type="text" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                </div>
+                <div class="col-6">
+                <asp:Label ID="Label2" runat="server" Text="Forma"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox2" CssClass="form-control" type="text"  runat="server"></asp:TextBox>
+                <br />
+                <br />
+                </div>
+           </div>
+            <div class="row">
+                <div class="col-6">
+                <asp:Label ID="Label3" runat="server" Text="Color"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox3" CssClass="form-control" type="text"  runat="server"></asp:TextBox>
+                <br />
+                </div>
+                <br />
+                <div class="col-6">
+                <asp:Label ID="Label4" runat="server" Text="ID de Clasificacion"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox4" CssClass="form-control" type="text"  runat="server"></asp:TextBox>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-4" style="text-align: center;">
+                
+                <asp:Button ID="Button1" CssClass="btn btn-dark" style="font-size:15px; margin:10px 10px 10px 10px; padding: 20px; align-self: center;" runat="server" Text="Insertar" OnClick="Button1_Click" />
+            </div>
+            <div class="col-4" style="text-align: center;">
+                <asp:Button ID="Button2" CssClass="btn btn-dark" style="font-size:15px; margin:10px 10px 10px 10px; padding: 20px; align-self: center;" runat="server" Text="Modificar" />
+            </div>
+            <div class="col-4" style="text-align: center;">
+                <asp:Button ID="Button3" CssClass="btn btn-dark" style="font-size:15px; margin:10px 10px 10px 10px; padding: 20px; align-self: center;" runat="server" Text="Eliminar" />
+            </div>
+        </div>
+    </div>
+
+
+
 </asp:Content>
