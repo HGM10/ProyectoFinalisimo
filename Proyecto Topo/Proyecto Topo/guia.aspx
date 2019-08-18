@@ -9,7 +9,7 @@
     <div class="row">
 
         <div class="col-10">   
-            <section class="container">
+            <section class="container" >
            <p class="mt-5  text-justify text-dark p-4">¿Eres un aficionado a las setas y hongos con experiencia? ¿Quieres ampliar conocimientos de las 
                setas y hongos comestibles que aparecen en una determinada zona? 
                ¿Te gusta ver setas comestibles, fotos e información? Sin duda alguna esta paginas

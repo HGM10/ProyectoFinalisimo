@@ -5,7 +5,8 @@
     
     <div class="container-fluid">
         <div class="row">
-<%--            <div class="col-12" style="text-align:center;">
+            <div class="col-12" style="text-align:center;">
+                <br />
                 <h3>Seleccione el indice de la Clasificacion segun al que pertenece su hongo</h3>
 
                 <br />
@@ -17,7 +18,7 @@
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reyno_fungiConnectionString %>" SelectCommand="SELECT * FROM [clasificacion]"></asp:SqlDataSource>
 
-            </div>--%>
+            </div>
         </div>
         <div class="form-group" style="margin: 0px 60px 0px 60px;">
             <%--en esta parte declaro que pertenezcan a una clase formulario--%>
