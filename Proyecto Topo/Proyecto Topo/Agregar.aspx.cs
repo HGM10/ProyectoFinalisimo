@@ -45,7 +45,7 @@ namespace Proyecto_Topo
             cmd.Parameters.Add("@n", SqlDbType.VarChar).Value = TextBox1.Text;
             cmd.Parameters.Add("@f", SqlDbType.VarChar).Value = TextBox2.Text;
             cmd.Parameters.Add("@c", SqlDbType.VarChar).Value = TextBox3.Text;
-            cmd.Parameters.Add("@fk", SqlDbType.Int).Value = Convert.ToInt32(TextBox4.Text);
+            cmd.Parameters.Add("@fk", SqlDbType.VarChar).Value = TextBox4.Text;
 
             try
             {
@@ -82,7 +82,7 @@ namespace Proyecto_Topo
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("update hongo set nombre = @n, forma = @f, color = @c, fk_clasificacion = @fk where id_hongo=@id", con);
+            SqlCommand cmd = new SqlCommand("update hongo set nombre = @n, forma = @f, color = @c, fk_clasificacion = @fk where id_hongo = @id", con);
             cmd.Parameters.Add("@n", SqlDbType.VarChar).Value = TextBox1.Text;
             cmd.Parameters.Add("@f", SqlDbType.VarChar).Value = TextBox2.Text;
             cmd.Parameters.Add("@c", SqlDbType.VarChar).Value = TextBox3.Text;
